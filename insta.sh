@@ -57,7 +57,7 @@ function start() {
 banner
 checkroot
 dependencies
-read -p Folami_collection
+read Folami_collection
  user
 checkaccount=$(curl -s https://www.instagram.com/$user/?__a=1 | grep -c "the page may have been removed")
 if [[ "$checkaccount" == 1 ]]; then
