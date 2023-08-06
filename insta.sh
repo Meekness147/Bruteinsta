@@ -57,8 +57,8 @@ function start() {
 banner
 checkroot
 dependencies
-read -p $'\e[Folami_collection
-: \e[0m' user
+read -p Folami_collection
+ user
 checkaccount=$(curl -s https://www.instagram.com/$user/?__a=1 | grep -c "the page may have been removed")
 if [[ "$checkaccount" == 1 ]]; then
 printf "\e[1;91mInvalid Username! Try again\e[0m\n"
